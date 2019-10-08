@@ -20,7 +20,7 @@ class Calculator extends React.Component {
         this.setState({
             weight: weight,
         });
-        this.calculatorBMI();
+        this.calculatorBMI(weight, this.state.height);
     }
 
     handleHeightChange(event) {
@@ -30,14 +30,11 @@ class Calculator extends React.Component {
         this.setState({
             height: height,
         });
-        this.calculatorBMI();
+        this.calculatorBMI(this.state.weight, height);
     }
 
-    calculatorBMI() {
-        const weight = this.state.weight;
-        const height = this.state.height / 100;
-        console.log('weight:' + weight);
-        console.log('height:' + height);
+    calculatorBMI(weight, height) {
+        height = height / 100;
         let bmi = (weight / (height * height)).toFixed(2);
         this.setState({
             bmi: bmi,
