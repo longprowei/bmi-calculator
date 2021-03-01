@@ -16,7 +16,7 @@ class Calculator extends React.Component {
 
     handleWeightChange(event) {
         const weight = event.target.value;
-        
+
         this.setState({
             weight: weight,
         });
@@ -26,7 +26,7 @@ class Calculator extends React.Component {
     handleHeightChange(event) {
         const height = event.target.value;
 
-        
+
         this.setState({
             height: height,
         });
@@ -43,20 +43,26 @@ class Calculator extends React.Component {
 
     render() {
         return (
-            <div className="calculator">
-                <div class="form-group">
-                    <label htmlFor="your-weight">Weight (kg): </label>
-                    <input type="number" id="your-weight" value={this.state.weight} onChange={this.handleWeightChange}/>
-                </div>
-                <div class="form-group">
-                    <label htmlFor="your-height">Height (cm): </label>
-                    <input type="number" id="your-height" value={this.state.height} onChange={this.handleHeightChange}/>
-                </div>
-                <div class="form-group">
-                    <label>BMI: </label>
-                    <span className="calculator-bmi">{this.state.bmi}</span>
+
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div className="calculator">
+                        <div class="mb-3">
+                            <label htmlFor="your-weight" class="form-label">Weight (kg): </label>
+                            <input type="number" id="your-weight" class="form-control" value={this.state.weight} onChange={this.handleWeightChange} />
+                        </div>
+                        <div class="mb-3">
+                            <label htmlFor="your-height" class="form-label">Height (cm): </label>
+                            <input type="number" id="your-height" class="form-control" value={this.state.height} onChange={this.handleHeightChange} />
+                        </div>
+                        <div class="mb-3">
+                            <label>BMI: </label>
+                            <span className="calculator-bmi">{this.state.bmi}</span>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         );
     }
 }
