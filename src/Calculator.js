@@ -44,17 +44,17 @@ class Calculator extends React.Component {
     render() {
         return (
             <div className="calculator">
-                <div>
-                    <label htmlFor="your-weight">Weight (kg)</label>
+                <div class="form-group">
+                    <label htmlFor="your-weight">Weight (kg): </label>
                     <input type="number" id="your-weight" value={this.state.weight} onChange={this.handleWeightChange}/>
                 </div>
-                <div>
-                    <label htmlFor="your-height">Height (cm)</label>
+                <div class="form-group">
+                    <label htmlFor="your-height">Height (cm): </label>
                     <input type="number" id="your-height" value={this.state.height} onChange={this.handleHeightChange}/>
                 </div>
-                <div>
-                    <label>BMI</label>
-                    <div className="calculator-bmi">{this.state.bmi}</div>
+                <div class="form-group">
+                    <label>BMI: </label>
+                    <span className="calculator-bmi">{this.state.bmi}</span>
                 </div>
             </div>
         );
