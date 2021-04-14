@@ -1,21 +1,21 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import Calculator from './Calculator'
 
 function App() {
   return (
     <div className="App">
-      <div class="container-fluid">
-        <div class="app-container row">
-          <header class="mb-auto">
-            header
+      <div className="container-fluid">
+        <div className="app-container row">
+          <header className="mb-auto">
+            <h3 className="text-center text-md-left"><a href="/">To My Homepage</a></h3>
           </header>
-          <main class="align-self-center">
+          <main className="align-self-center">
             <Calculator />
           </main>
           
-          <footer class="mt-auto">
-            footer
+          <footer className="mt-auto">
+            <p>Chenglong Wei &copy; <span id="copyright-year">{new Date().getFullYear()}</span></p>
           </footer>
         </div>
       </div>

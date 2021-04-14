@@ -1,5 +1,4 @@
 import React from 'react';
-import './calculator.css';
 
 class Calculator extends React.Component {
     constructor(props) {
@@ -44,18 +43,18 @@ class Calculator extends React.Component {
     render() {
         return (
 
-            <div class="row justify-content-center">
-                <div class="col-md-4">
+            <div className="row justify-content-center">
+                <div className="col-md-4">
                     <div className="calculator">
-                        <div class="mb-3">
-                            <label htmlFor="your-weight" class="form-label">Weight (kg): </label>
-                            <input type="number" id="your-weight" class="form-control" value={this.state.weight} onChange={this.handleWeightChange} />
+                        <div className="mb-3">
+                            <label htmlFor="your-weight" className="form-label">Weight (kg): </label>
+                            <input type="number" id="your-weight" className="form-control" value={this.state.weight} onChange={this.handleWeightChange} />
                         </div>
-                        <div class="mb-3">
-                            <label htmlFor="your-height" class="form-label">Height (cm): </label>
-                            <input type="number" id="your-height" class="form-control" value={this.state.height} onChange={this.handleHeightChange} />
+                        <div className="mb-3">
+                            <label htmlFor="your-height" className="form-label">Height (cm): </label>
+                            <input type="number" id="your-height" className="form-control" value={this.state.height} onChange={this.handleHeightChange} />
                         </div>
-                        <div class="mb-3">
+                        <div className="mb-3">
                             <label>BMI: </label>
                             <span className="calculator-bmi">{this.state.bmi}</span>
                         </div>
