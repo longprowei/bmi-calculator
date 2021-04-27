@@ -4,6 +4,12 @@
 
 header {
   padding: 10px 0;
+  h4 a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 footer {

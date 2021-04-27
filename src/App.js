@@ -8,7 +8,7 @@ function App() {
       <div className="container-fluid">
         <div className="app-container row">
           <header className="mb-auto">
-            <h3 className="text-center text-md-left"><a href="/">To My Homepage</a></h3>
+            <h4 className="text-md-start"><a href="/">To My Homepage</a></h4>
           </header>
           <main className="align-self-center">
             <Calculator />
