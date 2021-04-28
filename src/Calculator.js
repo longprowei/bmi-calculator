@@ -55,8 +55,8 @@ class Calculator extends React.Component {
                             <input type="number" id="your-height" className="form-control" value={this.state.height} onChange={this.handleHeightChange} />
                         </div>
                         <div className="mb-3">
-                            <label>BMI: </label>
-                            <span className="calculator-bmi">{this.state.bmi}</span>
+                            <label>BMI:&nbsp;&nbsp;</label>
+                            <span className="calculator-bmi"><strong>{this.state.bmi}</strong></span>
                         </div>
                     </div>
                 </div>
