@@ -35,6 +35,9 @@ class Calculator extends React.Component {
     calculatorBMI(weight, height) {
         height = height / 100;
         let bmi = (weight / (height * height)).toFixed(2);
+        if (isNaN(bmi) || !isFinite(bmi)) {
+            bmi = '';
+        }
         this.setState({
             bmi: bmi,
         });
