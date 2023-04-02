@@ -41,10 +41,13 @@ function Calculator() {
 
 export default Calculator;
 
-function calculatorBMI(weight, height) {
+export function calculatorBMI(weight, height) {
+    const minBmi = 5;
+    const maxBmi = 200;
+
     height = height / 100;
     let bmi = (weight / (height * height)).toFixed(2);
-    if (isNaN(bmi) || !isFinite(bmi)) {
+    if (isNaN(bmi) || !isFinite(bmi) || bmi < minBmi || bmi > maxBmi) {
         bmi = '';
     }
     
