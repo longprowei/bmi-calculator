@@ -48,16 +48,4 @@ describe('calculatorBMI function', () => {
     // Assert
     expect(bmi).toBe('');
   });
-
-  it('a wrong test case to test github action', () => {
-    // Arrange
-    const weight = 70;
-    const height = 1;
-    
-    // Act
-    const bmi = calculatorBMI(weight, height);
-
-    // Assert
-    expect(bmi).toBe('a');
-  });
 });
