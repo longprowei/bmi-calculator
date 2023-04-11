@@ -46,8 +46,8 @@ export function calculatorBMI(weight, height) {
     const maxBmi = 200;
 
     height = height / 100;
-    let bmi = (weight / (height * height)).toFixed(2);
-    if (isNaN(bmi) || !isFinite(bmi) || bmi < minBmi || bmi > maxBmi) {
+    let bmi = Number.parseFloat((weight / (height * height)).toFixed(2));
+    if (!Number.isFinite(bmi) || bmi < minBmi || bmi > maxBmi) {
         bmi = '';
     }
     
