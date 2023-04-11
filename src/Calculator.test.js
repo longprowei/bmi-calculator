@@ -1,4 +1,4 @@
-import { calculatorBMI } from './calculator';
+import { calculatorBMI } from './Calculator';
 
 describe('calculatorBMI function', () => {
   it('should calculate BMI correctly for valid input', () => {
@@ -10,7 +10,7 @@ describe('calculatorBMI function', () => {
     const bmi = calculatorBMI(weight, height);
 
     // Assert
-    expect(bmi).toBe('24.22');
+    expect(bmi).toBe(24.22);
   });
 
   it('should return an empty string for invalid input', () => {
